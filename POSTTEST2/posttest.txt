@@ -1,0 +1,59 @@
+Nama  : Sri Marsiah
+Nim   : 1515015021
+kelas : A 2015
+
+		Posttest
+1. Keyword :
+	a. char: Karakter tunggal diapit tanda kutip tunggal ‘a’, ‘b’, ‘\58’.
+
+	b. string: Rentetan karakter tang diapit tanda kutip ganda seperti “Jalan Bengkuring”. Panjang maksimum 255 karakter, sedangkan jika string tersebut dari file, atau terkandung dalam program, bisa mencapai 64 Kbyte.
+
+	c. symbol: Rangkaian huruf, angka dan garis bawah, asalkan karakter pertama huruf kecil, tidak mengandung spasi/karakter khusus.
+
+	d. integer: Bilangan bulat dari –32768 sampai dengan 32767. Integer heksadesimal diawali dengan tanda ($).
+
+	e. Rules: Aturan adalah suatu pernyataan yang menunjukkan bagaimana fakta-fakta berinteraksi satu dengan yang lain untuk membentuk suatu kesimpulan
+		Penerapannya: 
+		kakek(andi,bayu) :-
+		ayah(alimin,bedu) and
+		ayah(badu,ali).
+
+	f. Solutions: solusi adalah hasil yang diberikan setelah program dijalankan.
+		Contoh: 
+			What=bebet
+			What=tini
+			What=ikiiii
+
+	g. Fact: Fakta merupakan suatu kenyataan atau kebenaran yang diketahui.
+	   Fakta menyatakan hubungan/relasi antara dua obyek atau lebih atau menunjukkan sifat suatu obyek. 
+	   Contoh: saudara(anii,tini).
+	   suka(eka,menyanyi).
+	   manis(gula).
+
+	h. Query: adalah pertanyaan yang dapat diajukan sehubungan dengan fakta-fakta .
+	   Contoh: suka(deri, bebet).
+		   suka(ikii,sarman).
+
+
+	i. Prolog: adalah kependekan dari Programming Logic, yang berarti Bahasa pemrograman logika atau Bahasa pemrograman non-procedural. 
+	   Penerapannya: pada system pakar, pengolahan Bahasa alami, robotic, pengenalan pola, belajar, dan game console.
+
+	j. real: Bilangan real dari 1 x 10-307 sampai 1 x 10308. Jika integer diberikan pada argumen real maka akan langsung diubah ke real.
+
+	
+	k. Predicates: Hubungan yang merepresentasikan klausa. 
+		contoh
+			- Klausa suka(sri, eskrim) maka predikatnya adalah suka.
+			- Klausa anakperempuan(lela,sarman) maka predikatnya adalah anakperempuan.
+
+
+
+
+
+
+
+
+
+
+
+
