@@ -1,0 +1,32 @@
+predicates
+  buy_car(symbol,symbol) - determ (i,o)
+  car(symbol,symbol,integer) - nondeterm (i,o,o)
+  colors(symbol,symbol) - nondeterm (i,i)
+
+clauses
+  buy_car(Model,Color):-
+	car(Model,Color,Price),
+	colors(Color,sexy),!,
+	Price > 25000.
+
+  car(maserati,green,25000).
+  car(corvette,black,24000).
+  car(corvette,red,26000).
+  car(porsche,red,24000).
+
+  colors(red,sexy).
+  colors(black,mean).
+  colors(green,preppy).
+
+goal
+  buy_car(corvette,Y).
+
+backtraking program : pertama dapat kita lihat bahwa ada satu goal yang akan diuji,pada goal diatas yang diinginkan adalah membeli modil berwarna red
+pada program diatas mencari warna pada mobil dengan inputannya adalah model mobil,warna dan harga.warna mobil tergolong dalam kategori sexy, dimana warna sexy itu adalah warna red
+syaratnya yaitu mobil harus mempunyai model,warna,dan harga. warna mobil tergolong dalam kategori sexy. dan aturan harga > 25000 tidak perlu dijalankan karena terdapat fungsi not di harga.
+jadi pelacakannya hanya sampai rules kedua adalah warna dengan kategori sexy.
+pada tahap ini program membaca lebih awal adalah :
+1. car(maserati,green,25000).memenuhi rules pertama adalah mempunyai model,warna dan harga tetapi warna yang diminta harus dalam kategori sexy, sedangkan green bukan termasuk warna kategory sexy(lacak balik).
+2. car(corvette,black,24000). memenuhi rules pertama adalah mempunyai model, warnna dan harga tetapi harus didalam kategori sexy.(lacak balik)
+3. car(corvette,red,26000). memenuhi rules pertama yaitu mempunyai model, warna dan harga adalah model corvette,red dan 26000.yang kedua harus memiliki warna,red memenuhi kategari sexy yang dicari. pernyataan ketiga tidak dijalankan karena terdapat fungsi not yang berarti berhenti sampai pada rules kedua yang harus terpenuhi hanya rules pertama dan kedua.(berhenti)
+setelah semua rules memenuhi maka program akan berhenti melacak dan ditemukanlah goal dari program yaitu  buy_car (corvette,y)= red
